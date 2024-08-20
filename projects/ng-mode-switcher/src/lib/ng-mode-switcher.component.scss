@@ -1,0 +1,123 @@
+$dark: #000;
+$dim-dark: #33333312;
+
+$light: #fff;
+$dim-light: #cccccc24;
+
+@mixin container() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+@mixin image($color) {
+    svg {
+        path {
+            fill: $color;
+        }
+    }
+
+    &:hover {
+        svg {
+            path {
+                fill: $color;
+            }
+        }
+    }
+
+}
+
+@mixin text($color) {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    transition: text-shadow .3s;
+    color: $color;
+
+    &:hover {
+        text-shadow: 0 0 .65px $color, 0 0 .65px $color;
+    }
+}
+
+@mixin mode($color) {
+    @include container();
+    @include image($color);
+    @include text($color);
+}
+
+.mode-switcher-container {
+    position: relative;
+
+    .selected-mode {
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        .mode {
+            @include container();
+
+            &.light-mode {
+                @include image($dark);
+                @include text($dark);
+            }
+
+            &.dark-mode {
+                @include image($light);
+                @include text($light);
+            }
+        }
+
+        &.light-mode {
+            .mode {
+                &.system-mode {
+                    @include image($dark);
+                    @include text($dark);
+                }
+            }
+        }
+
+        &.dark-mode {
+            .mode {
+                &.system-mode {
+                    @include image($light);
+                    @include text($light);
+                }
+            }
+        }
+    }
+
+    // .mode-options {
+    //     display: flex;
+    //     flex-direction: column;
+
+    //     &.light-mode {
+    //         border: 1px solid $dark;
+    //         background: $light;
+    //         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+
+    //         .mode {
+    //             @include mode($dark);
+
+    //             &:hover {
+    //                 background: $dim-dark;
+    //             }
+    //         }
+    //     }
+
+    //     &.dark-mode {
+    //         border: 1px solid $light;
+    //         background: $dark;
+    //         box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.6);
+
+    //         .mode {
+    //             @include mode($light);
+
+    //             &:hover {
+    //                 background: $dim-light;
+    //             }
+    //         }
+    //     }
+    // }
+}

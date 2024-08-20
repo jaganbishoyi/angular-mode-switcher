@@ -1,4 +1,14 @@
-# Angular Mode Switcher
+# Angular Mode(Dark, Light, System/Auto) Switcher
+
+[![npm](https://img.shields.io/npm/v/ng-mode-switcher.svg?style=flat-square)](https://www.npmjs.com/package/ng-mode-switcher)
+[![GitHub Contributors](https://img.shields.io/github/contributors/jaganbishoyi/angular-mode-switcher.svg?style=flat-square)](https://github.com/jaganbishoyi/angular-mode-switcher/graphs/contributors)
+![GitHub language count](https://img.shields.io/github/languages/count/jaganbishoyi/angular-mode-switcher)
+![npm bundle size](https://img.shields.io/bundlephobia/min/ng-mode-switcher)
+![GitHub repo size](https://img.shields.io/github/repo-size/jaganbishoyi/angular-mode-switcher)
+![npm](https://img.shields.io/npm/dt/ng-mode-switcher)
+![NPM](https://img.shields.io/npm/l/ng-mode-switcher)
+![GitHub last commit](https://img.shields.io/github/last-commit/jaganbishoyi/angular-mode-switcher)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/jaganbishoyi/angular-mode-switcher/issues)
 
 **ng-mode-switcher** is a versatile Angular library that allows developers to effortlessly integrate dark mode, light mode, and auto (system default) mode switching into their applications. With a simple configuration, you can provide users with a seamless experience, adapting to their preferred display settings.
 
@@ -8,6 +18,10 @@ This library offers full customization:
 - **Customizable Mode Names**: Tailor the mode names to fit your application's branding or user experience.
 
 Make your Angular applications more user-friendly and responsive to individual preferences with `ng-mode-switcher`.
+
+## Demo
+
+[https://jaganb.dev/angular-mode-switcher-demo/](https://jaganb.dev/angular-mode-switcher-demo/)
 
 ## Installation
 
@@ -37,6 +51,19 @@ You may pass `config` as an object:
 
 ```html
 <ng-mode-switcher [config]="customConfig"></ng-mode-switcher>
+```
+
+### Default Config
+
+```ts
+config: IConfig = {
+    legend: {
+        visible: true,
+        LIGHT: 'light',
+        DARK: 'dark',
+        SYSTEM: 'system'
+    }
+}
 ```
 
 ### Custom Config

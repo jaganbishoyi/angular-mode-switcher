@@ -1,6 +1,6 @@
 {
     "name": "ng-mode-switcher",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "author": {
         "name": "Jagan Mohan Bishoyi",
         "email": "jaganmohanbishoyi@gmail.com",
@@ -22,7 +22,7 @@
     "bugs": {
         "url": "https://github.com/jaganbishoyi/ng-mode-switcher/issues"
     },
-    "homepage": "https://jaganbishoyi.github.io/angular-mode-switcher/",
+    "homepage": "https://jaganb.dev/angular-mode-switcher-demo/",
     "peerDependencies": {
         "@angular/common": "^14.2.0",
         "@angular/core": "^14.2.0"

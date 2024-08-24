@@ -1,23 +1,23 @@
 # Angular Mode(Dark, Light, System/Auto) Switcher
 
-[![npm](https://img.shields.io/npm/v/ng-mode-switcher.svg?style=flat-square)](https://www.npmjs.com/package/ng-mode-switcher)
+[![npm](https://img.shields.io/npm/v/ngx-mode-switcher.svg?style=flat-square)](https://www.npmjs.com/package/ngx-mode-switcher)
 [![GitHub Contributors](https://img.shields.io/github/contributors/jaganbishoyi/angular-mode-switcher.svg?style=flat-square)](https://github.com/jaganbishoyi/angular-mode-switcher/graphs/contributors)
 ![GitHub language count](https://img.shields.io/github/languages/count/jaganbishoyi/angular-mode-switcher)
-![npm bundle size](https://img.shields.io/bundlephobia/min/ng-mode-switcher)
+![npm bundle size](https://img.shields.io/bundlephobia/min/ngx-mode-switcher)
 ![GitHub repo size](https://img.shields.io/github/repo-size/jaganbishoyi/angular-mode-switcher)
-![npm](https://img.shields.io/npm/dt/ng-mode-switcher)
-![NPM](https://img.shields.io/npm/l/ng-mode-switcher)
+![npm](https://img.shields.io/npm/dt/ngx-mode-switcher)
+![NPM](https://img.shields.io/npm/l/ngx-mode-switcher)
 ![GitHub last commit](https://img.shields.io/github/last-commit/jaganbishoyi/angular-mode-switcher)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/jaganbishoyi/angular-mode-switcher/issues)
 
-**ng-mode-switcher** is a versatile Angular library that allows developers to effortlessly integrate dark mode, light mode, and auto (system default) mode switching into their applications. With a simple configuration, you can provide users with a seamless experience, adapting to their preferred display settings.
+**ngx-mode-switcher** is a versatile Angular library that allows developers to effortlessly integrate dark mode, light mode, and auto (system default) mode switching into their applications. With a simple configuration, you can provide users with a seamless experience, adapting to their preferred display settings.
 
 This library offers full customization:
 
 - **Configurable Display**: Choose to show or hide the mode-switching legend.
 - **Customizable Mode Names**: Tailor the mode names to fit your application's branding or user experience.
 
-Make your Angular applications more user-friendly and responsive to individual preferences with `ng-mode-switcher`.
+Make your Angular applications more user-friendly and responsive to individual preferences with `ngx-mode-switcher`.
 
 ## Demo
 
@@ -28,29 +28,29 @@ Make your Angular applications more user-friendly and responsive to individual p
 Install the npm package.
 
 ```bash
-npm i ng-mode-switcher
+npm i ngx-mode-switcher
 ```
 
 Import in `NgModule`:
 
 ```ts
-import { NgModeSwitcherModule } from 'ng-mode-switcher';
+import { NgxModeSwitcherModule } from 'ngx-mode-switcher';
 
 @NgModule({
-    imports: [ NgModeSwitcherModule ]
+    imports: [ NgxModeSwitcherModule ]
 })
 ```
 
 ## Usage
 
 ```html
-<ng-mode-switcher></ng-mode-switcher>
+<ngx-mode-switcher></ngx-mode-switcher>
 ```
 
 You may pass `config` as an object:
 
 ```html
-<ng-mode-switcher [config]="customConfig"></ng-mode-switcher>
+<ngx-mode-switcher [config]="customConfig"></ngx-mode-switcher>
 ```
 
 ### Default Config
@@ -93,7 +93,7 @@ customConfig: IConfig = {
 
 ## For any questions, suggestions, or feature requests
 
-[Please file an issue!](https://github.com/jaganbishoyi/ng-mode-switcher/issues)
+[Please file an issue!](https://github.com/jaganbishoyi/ngx-mode-switcher/issues)
 
 ## License
 

@@ -1,14 +1,14 @@
 import { Component, Inject, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { NgModeSwitcherService } from './ng-mode-switcher.service';
-import { IConfig, IModeStorage, Mode } from './ng-mode-switcher.model';
-import { MODE_STORAGE_SERVICE } from './ng-mode-storage.service';
+import { NgxModeSwitcherService } from './ngx-mode-switcher.service';
+import { IConfig, IModeStorage, Mode } from './ngx-mode-switcher.model';
+import { MODE_STORAGE_SERVICE } from './ngx-mode-storage.service';
 
 @Component({
-    selector: 'ng-mode-switcher',
-    templateUrl: "./ng-mode-switcher.component.html",
-    styleUrls: ['./ng-mode-switcher.component.scss']
+    selector: 'ngx-mode-switcher',
+    templateUrl: "./ngx-mode-switcher.component.html",
+    styleUrls: ['./ngx-mode-switcher.component.scss']
 })
-export class NgModeSwitcherComponent implements OnChanges {
+export class NgxModeSwitcherComponent implements OnChanges {
     @Input('config') config: IConfig = {
         legend: {
             visible: true,
@@ -24,7 +24,7 @@ export class NgModeSwitcherComponent implements OnChanges {
     selectedMode: Mode = Mode.LIGHT;
 
     constructor(
-        private modeSwitcherService: NgModeSwitcherService,
+        private modeSwitcherService: NgxModeSwitcherService,
         @Inject(MODE_STORAGE_SERVICE) private modeStorage: IModeStorage
     ) {
         this.modeSwitcherService.modeChanged$.subscribe((mode: Mode) => {

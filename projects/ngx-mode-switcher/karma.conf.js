@@ -25,7 +25,7 @@ module.exports = function(config) {
             suppressAll: true // removes the duplicated traces
         },
         coverageReporter: {
-            dir: require('path').join(__dirname, '../../coverage/ng-mode-switcher'),
+            dir: require('path').join(__dirname, '../../coverage/ngx-mode-switcher'),
             subdir: '.',
             reporters: [
                 { type: 'html' },

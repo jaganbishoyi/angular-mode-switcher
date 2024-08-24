@@ -1,5 +1,5 @@
 import { Injectable, InjectionToken } from "@angular/core";
-import { IModeStorage, Mode } from './ng-mode-switcher.model';
+import { IModeStorage, Mode } from './ngx-mode-switcher.model';
 
 export const MODE_STORAGE_SERVICE = new InjectionToken<IModeStorage>("MODE_STORAGE");
 
@@ -10,10 +10,10 @@ export class ModeLocalStorageService implements IModeStorage {
             mode: mode,
             isSystem: isSystem
         };
-        localStorage.setItem("ng-mode-switcher", JSON.stringify(modeData));
+        localStorage.setItem("ngx-mode-switcher", JSON.stringify(modeData));
     }
 
     getMode(): string {
-        return <string>localStorage.getItem("ng-mode-switcher");
+        return <string>localStorage.getItem("ngx-mode-switcher");
     }
 }

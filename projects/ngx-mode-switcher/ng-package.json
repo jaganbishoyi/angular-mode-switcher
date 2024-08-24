@@ -1,8 +1,8 @@
 {
     "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-    "dest": "../../dist/ng-mode-switcher",
+    "dest": "../../dist/ngx-mode-switcher",
     "lib": {
         "entryFile": "src/public-api.ts"
     },
-    "allowedNonPeerDependencies": ["ng-mode-switcher"]
+    "allowedNonPeerDependencies": ["ngx-mode-switcher"]
 }

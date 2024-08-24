@@ -12,7 +12,7 @@
         "noFallthroughCasesInSwitch": true,
         "sourceMap": true,
         "paths": {
-            "ng-mode-switcher": ["dist/ng-mode-switcher"]
+            "ngx-mode-switcher": ["dist/ngx-mode-switcher"]
         },
         "declaration": false,
         "downlevelIteration": true,

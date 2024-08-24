@@ -1,11 +1,11 @@
 import { DOCUMENT } from '@angular/common';
 import { Inject, Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { MODE_STORAGE_SERVICE } from './ng-mode-storage.service';
-import { Mode, IModeStorage } from './ng-mode-switcher.model';
+import { MODE_STORAGE_SERVICE } from './ngx-mode-storage.service';
+import { Mode, IModeStorage } from './ngx-mode-switcher.model';
 
 @Injectable()
-export class NgModeSwitcherService {
+export class NgxModeSwitcherService {
     private currentMode: Mode = Mode.LIGHT;
 
     private modeChangedSubject = new BehaviorSubject(this.currentMode);

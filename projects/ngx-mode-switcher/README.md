@@ -23,12 +23,28 @@ Make your Angular applications more user-friendly and responsive to individual p
 
 [https://jaganb.dev/angular-mode-switcher-demo/](https://jaganb.dev/angular-mode-switcher-demo/)
 
+## Compatibility
+
+### Supported Angular Versions
+
+This library is compatible with the following Angular versions:
+
+- Angular 14: `^14.0.0`
+- Angular 15: `^15.0.0`
+- Angular 16: `^16.0.0`
+- Angular 17: `^17.0.0`
+- Angular 18: `^18.0.0`
+
+### Installation Instructions
+
+Ensure that your project uses one of the supported Angular versions.
+
 ## Installation
 
 Install the npm package.
 
 ```bash
-npm i ngx-mode-switcher
+npm install ngx-mode-switcher
 ```
 
 Import in `NgModule`:
@@ -93,7 +109,9 @@ customConfig: IConfig = {
 
 ## For any questions, suggestions, or feature requests
 
-[Please file an issue!](https://github.com/jaganbishoyi/ngx-mode-switcher/issues)
+[https://github.com/jaganbishoyi/angular-mode-switcher/issues](https://github.com/jaganbishoyi/angular-mode-switcher/issues)
+
+> ### For a comprehensive guide on implementing Light, Dark, and System/Auto modes in Angular, please read the detailed blog post available at [https://jaganb.dev/blogs/implement-light-dark-mode-in-angular](https://jaganb.dev/blogs/implement-light-dark-mode-in-angular)
 
 ## License
 

@@ -14,22 +14,6 @@
             <span class="text" *ngIf="config.legend.visible">{{config.legend.SYSTEM}}</span>
         </span>
     </button>
-
-    <!-- <div class="mode-options" *ngIf="showOptions"
-        [ngClass]="{'light-mode': currentMode === 'light','dark-mode': currentMode === 'dark','system-mode': currentMode === 'system'}">
-        <span class="mode" (click)="changeMode('light')">
-            <ng-container *ngTemplateOutlet="light"></ng-container>
-            <span class="text">light</span>
-        </span>
-        <span class="mode" (click)="changeMode('dark')">
-            <ng-container *ngTemplateOutlet="dark"></ng-container>
-            <span class="text">dark</span>
-        </span>
-        <span class="mode" (click)="changeMode('system')">
-            <ng-container *ngTemplateOutlet="system"></ng-container>
-            <span class="text">system</span>
-        </span>
-    </div> -->
 </div>
 
 <ng-template #light>

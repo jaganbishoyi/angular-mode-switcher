@@ -6,7 +6,7 @@ import { Mode, IModeStorage } from './ngx-mode-switcher.model';
 
 @Injectable()
 export class NgxModeSwitcherService {
-    private currentMode: Mode = Mode.LIGHT;
+    private currentMode: Mode = Mode.SYSTEM;
 
     private modeChangedSubject = new BehaviorSubject(this.currentMode);
 

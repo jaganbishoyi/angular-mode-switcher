@@ -117,7 +117,7 @@ customConfig: IConfig = {
 
 License under the MIT License (MIT)
 
-Copyright (c) 2024 [Jagan Mohan Bishoyi](http://jaganbishoyi.github.io/)
+Copyright (c) 2024 [Jagan Mohan Bishoyi](http://jaganb.dev/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

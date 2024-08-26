@@ -29,7 +29,8 @@
                     "options": {
                         "main": "projects/ngx-mode-switcher/src/test.ts",
                         "tsConfig": "projects/ngx-mode-switcher/tsconfig.spec.json",
-                        "karmaConfig": "projects/ngx-mode-switcher/karma.conf.js"
+                        "karmaConfig": "projects/ngx-mode-switcher/karma.conf.js",
+                        "codeCoverage": true
                     }
                 }
             }

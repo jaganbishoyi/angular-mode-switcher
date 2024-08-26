@@ -9,7 +9,7 @@ import { MODE_STORAGE_SERVICE } from './ngx-mode-storage.service';
     styleUrls: ['./ngx-mode-switcher.component.scss']
 })
 export class NgxModeSwitcherComponent implements OnChanges {
-    @Input('config') config: IConfig = {
+    @Input() config: IConfig = {
         legend: {
             visible: true,
             LIGHT: "light",

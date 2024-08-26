@@ -9,7 +9,7 @@ import { MODE_STORAGE_SERVICE } from './ngx-mode-storage.service';
     styleUrls: ['./ngx-mode-switcher.component.scss']
 })
 export class NgxModeSwitcherComponent implements OnChanges {
-    @Input('config') config: IConfig = {
+    @Input() config: IConfig = {
         legend: {
             visible: true,
             LIGHT: "light",
@@ -18,10 +18,9 @@ export class NgxModeSwitcherComponent implements OnChanges {
         }
     };
 
-    currentMode: Mode = Mode.LIGHT;
-    // showOptions = false;
+    currentMode: Mode = Mode.SYSTEM;
+    selectedMode: Mode = Mode.SYSTEM;
     isSystem = false;
-    selectedMode: Mode = Mode.LIGHT;
 
     constructor(
         private modeSwitcherService: NgxModeSwitcherService,
@@ -77,11 +76,9 @@ export class NgxModeSwitcherComponent implements OnChanges {
                 break;
         }
 
-        // this.showOptions = false;
     }
 
     toggleOptionView(): void {
-        // this.showOptions = !this.showOptions;
         switch (this.selectedMode) {
             case 'light':
                 this.changeMode('dark');

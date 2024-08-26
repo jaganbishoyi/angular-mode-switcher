@@ -1,20 +1,20 @@
 {
     "name": "angular-mode-switcher",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build --configuration production",
         "watch": "ng build --watch --configuration development",
-        "test": "ng test"
+        "test": "ng test --watch=false --browsers=ChromeHeadless",
+        "lint": "ng lint",
+        "prepare": "husky install"
     },
     "private": true,
     "dependencies": {
-        "@angular/animations": "^14.2.0",
         "@angular/common": "^14.2.0",
         "@angular/compiler": "^14.2.0",
         "@angular/core": "^14.2.0",
-        "@angular/forms": "^14.2.0",
         "@angular/platform-browser": "^14.2.0",
         "@angular/platform-browser-dynamic": "^14.2.0",
         "@angular/router": "^14.2.0",
@@ -25,9 +25,18 @@
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "^14.2.13",
+        "@angular-eslint/builder": "14.4.0",
+        "@angular-eslint/eslint-plugin": "14.4.0",
+        "@angular-eslint/eslint-plugin-template": "14.4.0",
+        "@angular-eslint/schematics": "14.4.0",
+        "@angular-eslint/template-parser": "14.4.0",
         "@angular/cli": "~14.2.12",
         "@angular/compiler-cli": "^14.2.0",
         "@types/jasmine": "~4.0.0",
+        "@typescript-eslint/eslint-plugin": "5.43.0",
+        "@typescript-eslint/parser": "5.43.0",
+        "eslint": "^8.28.0",
+        "husky": "^9.1.5",
         "jasmine-core": "~4.3.0",
         "karma": "~6.4.0",
         "karma-chrome-launcher": "~3.1.0",

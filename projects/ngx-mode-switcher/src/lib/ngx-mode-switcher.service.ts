@@ -6,10 +6,8 @@ import { Mode, IModeStorage } from './ngx-mode-switcher.model';
 
 @Injectable()
 export class NgxModeSwitcherService {
-    private currentMode: Mode = Mode.LIGHT;
-
+    private currentMode: Mode = Mode.SYSTEM;
     private modeChangedSubject = new BehaviorSubject(this.currentMode);
-
     modeChanged$: Observable<Mode>;
 
     constructor(
@@ -27,7 +25,7 @@ export class NgxModeSwitcherService {
     }
 
     private init(): void {
-        const initMode = JSON.parse(this.modeStorage.getMode());
+        const initMode = this.modeStorage.getMode() ? JSON.parse(this.modeStorage.getMode()) : ""
 
         if (initMode && initMode.mode) {
             this.updateCurrentMode(initMode.mode, initMode.isSystem);

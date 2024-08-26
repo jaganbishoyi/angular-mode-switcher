@@ -5,6 +5,7 @@ export const MODE_STORAGE_SERVICE = new InjectionToken<IModeStorage>("MODE_STORA
 
 @Injectable()
 export class ModeLocalStorageService implements IModeStorage {
+
     save(mode: Mode, isSystem = false): void {
         const modeData = {
             mode: mode,
